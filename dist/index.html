@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travler</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__top">
+                    <a class="logo" href="#">
+                        <svg class="logo__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="51" viewBox="0 0 48 51"><defs><path id="t24wa" d="M350.06 87.941c.133.927-.242 1.87-.977 2.46a2.737 2.737 0 0 1-2.638.437l-10.435-3.75a23.933 23.933 0 0 1-7.924 1.338c-7.316 0-14.372-3.344-18.875-8.946-3.988-4.96-5.784-11.16-5.057-17.456.728-6.297 3.892-11.937 8.91-15.88A24.227 24.227 0 0 1 327.974 41c7.379 0 14.235 3.264 18.81 8.954 6.28 7.81 6.943 18.644 1.71 27.116zm-6.687-12.91c4.584-6.68 4.248-15.417-.836-21.74-3.54-4.403-8.846-6.929-14.56-6.929-4.234 0-8.224 1.376-11.537 3.98-3.884 3.052-6.333 7.417-6.897 12.29-.563 4.874.827 9.672 3.914 13.512 3.486 4.334 8.95 6.922 14.62 6.923a18.45 18.45 0 0 0 6.816-1.293 2.75 2.75 0 0 1 1.653-.115c.218.022.433.071.642.145l6.864 2.468-.98-6.813a2.67 2.67 0 0 1 .301-2.429zm-16.228-23.292a2.672 2.672 0 0 1-1.384 3.535c-3.403 1.488-6.014 4.344-7.164 7.835a2.704 2.704 0 0 1-2.578 1.851c-.287 0-.57-.045-.844-.133a2.683 2.683 0 0 1-1.574-1.333 2.636 2.636 0 0 1-.162-2.046c1.627-4.937 5.318-8.975 10.127-11.078.347-.153.717-.23 1.098-.23 1.073 0 2.047.627 2.48 1.599z"/><mask id="t24wc" width="2" height="2" x="-1" y="-1"><path fill="#fff" d="M304 41h48v50h-48z"/><use xlink:href="#t24wa"/></mask><filter id="t24wb" width="68" height="71" x="294" y="31" filterUnits="userSpaceOnUse"><feOffset dy="1" in="SourceGraphic" result="FeOffset1023Out"/><feGaussianBlur in="FeOffset1023Out" result="FeGaussianBlur1024Out" stdDeviation="0 0"/></filter><linearGradient id="t24wd" x1="312" x2="344" y1="91" y2="41" gradientUnits="userSpaceOnUse"><stop offset="0" stop-opacity=".3"/><stop offset="1" stop-color="#fff" stop-opacity=".3"/></linearGradient></defs><g><g transform="translate(-304 -41)"><g filter="url(#t24wb)"><use fill="none" stroke-width="0" mask="url(&quot;#t24wc&quot;)" xlink:href="#t24wa"/><use fill="#fff" xlink:href="#t24wa"/></g><use fill="#8038c2" xlink:href="#t24wa"/><use fill="url(#t24wd)" xlink:href="#t24wa"/></g></g></svg>
+                        <div class="logo__txt">
+                            <p class="logo__title">travler</p>
+                            <p class="logo__subtitle">Get the advice you need about travel</p>
+                        </div>
+                    </a>
+                    <div class="header__right">
+                    <div class="header__search">
+                        <a class="header__search-link" href="#">Quicklinks<svg class="header__search-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="18" viewBox="0 0 11 18"><defs><path id="cq05a" d="M726.265 65.354c0-1.878 1.45-3.4 3.237-3.4 1.788 0 3.237 1.522 3.237 3.4 0 1.877-1.45 3.4-3.237 3.4-1.787 0-3.237-1.523-3.237-3.4zm-2.265.425c0 1.422 1.641 4.42 1.641 4.42l3.861 6.8 3.639-6.8s1.863-3.02 1.863-4.42c0-3.193-2.463-5.781-5.502-5.781-3.039 0-5.502 2.588-5.502 5.78z"/><mask id="cq05c" width="2" height="2" x="-1" y="-1"><path fill="#fff" d="M724 60h11v17h-11z"/><use xlink:href="#cq05a"/></mask><filter id="cq05b" width="31" height="38" x="714" y="50" filterUnits="userSpaceOnUse"><feOffset dy="1" in="SourceGraphic" result="FeOffset1059Out"/><feGaussianBlur in="FeOffset1059Out" result="FeGaussianBlur1060Out" stdDeviation="0 0"/></filter></defs><g><g transform="translate(-724 -60)"><g filter="url(#cq05b)"><use fill="none" stroke-width="0" mask="url(&quot;#cq05c&quot;)" xlink:href="#cq05a"/><use fill="#fff" xlink:href="#cq05a"/></g><use fill="#fff" xlink:href="#cq05a"/><use fill="#c7c7c7" xlink:href="#cq05a"/></g></g></svg></a>
+                        <a class="header__search-link" href="#">Select from dropdow</a>
+                        <input class="header__input" type="text" placeholder="Search for something here">
+                        <button class="header__btn"><svg class="header__btn-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 23 23"><defs><path id="dtlna" d="M1219.5 59.988c6.35 0 11.5 5.149 11.5 11.5s-5.15 11.5-11.5 11.5c-6.352 0-11.5-5.149-11.5-11.5s5.148-11.5 11.5-11.5zm-9.382 11.524a9.288 9.288 0 0 0 9.289 9.288 9.288 9.288 0 1 0 0-18.576 9.288 9.288 0 0 0-9.289 9.288zm11.973 2.285h-3.511a.875.875 0 0 1-.876-.876v-5.326a.876.876 0 1 1 1.751 0v4.45h2.636a.876.876 0 0 1 0 1.752z"/></defs><g><g transform="translate(-1208 -60)"><use fill="#701dbb" xlink:href="#dtlna"/></g></g></svg></button>
+                        <button class="header__btn-search"><svg class="header__btn-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></button>
+                    </div>
+                    <div class="header__burger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                </div>
+            </div>
+                <nav class="header__nav">
+                    <a class="header__nav-link" href="#">
+                        <svg class="header__nav-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="27" viewBox="0 0 26 27"><defs><path id="7voxa" d="M389.785 173c-7.046 0-12.779-5.832-12.779-13s5.733-13 12.78-13c7.046 0 12.778 5.832 12.778 13s-5.732 13-12.779 13zm5.372-5.985c-.873 2.009-2.025 3.425-3.011 4.367a11.346 11.346 0 0 0 5.348-2.799 15.828 15.828 0 0 0-2.337-1.568zm-13.11 1.54a11.349 11.349 0 0 0 5.378 2.827c-1.009-.963-2.19-2.423-3.07-4.504-.763.437-1.534.99-2.309 1.677zm8.41-3.048v5.546c.967-.754 2.444-2.21 3.485-4.63a11.694 11.694 0 0 0-3.484-.916zm-4.892.767c1.044 2.51 2.562 4.01 3.548 4.78v-5.586a9.968 9.968 0 0 0-3.548.806zm10.066-.499c1.194.63 2.151 1.32 2.794 1.835a11.691 11.691 0 0 0 2.775-6.926h-4.7c-.062 1.969-.39 3.656-.869 5.091zm-17.26-5.09a11.69 11.69 0 0 0 2.74 6.885 15.108 15.108 0 0 1 2.765-1.987c-.444-1.393-.747-3.017-.806-4.899zm12.087 3.482c1.441.134 2.774.527 3.945 1.024.41-1.275.692-2.768.751-4.507h-4.696zm-6.042-3.483c.056 1.647.312 3.075.688 4.305a11.096 11.096 0 0 1 4.009-.867v-3.438zm12.084-1.368h4.7a11.69 11.69 0 0 0-2.74-6.885 15.094 15.094 0 0 1-2.766 1.986c.444 1.393.747 3.017.806 4.899zm-6.042 0h4.696c-.056-1.647-.312-3.075-.687-4.304a11.096 11.096 0 0 1-4.01.866zm-6.042 0h4.697v-3.483c-1.442-.134-2.775-.527-3.946-1.024-.41 1.275-.692 2.768-.751 4.507zm-6.045 0h4.699c.062-1.969.39-3.656.869-5.091a17.799 17.799 0 0 1-2.794-1.836 11.691 11.691 0 0 0-2.774 6.927zm12.087-10.369v5.585a9.968 9.968 0 0 0 3.547-.806c-1.044-2.51-2.562-4.01-3.547-4.779zm-4.83 4.63a11.7 11.7 0 0 0 3.485.916v-5.546c-.966.754-2.443 2.21-3.485 4.63zm6.518-4.96c1.008.964 2.19 2.424 3.07 4.505.762-.437 1.533-.99 2.308-1.677a11.352 11.352 0 0 0-5.379-2.827zm-10.07 2.8a15.79 15.79 0 0 0 2.337 1.568c.873-2.009 2.026-3.425 3.012-4.367a11.35 11.35 0 0 0-5.348 2.799z"/><mask id="7voxc" width="2" height="2" x="-1" y="-1"><path fill="#fff" d="M377 147h26v26h-26z"/><use xlink:href="#7voxa"/></mask><filter id="7voxb" width="46" height="47" x="367" y="137" filterUnits="userSpaceOnUse"><feOffset dy="1" in="SourceGraphic" result="FeOffset1153Out"/><feGaussianBlur in="FeOffset1153Out" result="FeGaussianBlur1154Out" stdDeviation="0 0"/></filter></defs><g><g transform="translate(-377 -147)"><g filter="url(#7voxb)"><use fill="none" stroke-width="0" mask="url(&quot;#7voxc&quot;)" xlink:href="#7voxa"/><use fill="#fff" xlink:href="#7voxa"/></g><use fill="#fff" xlink:href="#7voxa"/><use fill="#7d7d7d" xlink:href="#7voxa"/></g></g></svg>
+                        <p class="header__nav-subtitle" >Travel Guide</p>
+                    </a>
+                    <a class="header__nav-link" href="#">
+                        <svg class="header__nav-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="25" viewBox="0 0 26 25"><defs><path id="36k3a" d="M550.966 171.285a.68.68 0 0 1-.672-.666l-.12-5.856-5.68-2.872a.679.679 0 0 1-.27-.98l.001-.002a.477.477 0 0 1 .018-.025.67.67 0 0 1 .258-.219l24.166-12.222a.668.668 0 0 1 .95.376.688.688 0 0 1-.024.507l-9.06 21.384a.69.69 0 0 1-.12.198h-.001a.547.547 0 0 1-.025.027s-.001.001 0 0a.667.667 0 0 1-.45.2l-.02.001h-.008a.661.661 0 0 1-.387-.124l-5.12-3.57-2.916 3.595a.67.67 0 0 1-.52.248zm4.302-4.89l3.937 2.745-.177-7.216zm-3.752-1.743l.084 4.1 2.153-2.655.006-.007a.147.147 0 0 1 .004-.005l9.626-11.442-5.422 4.57a.636.636 0 0 1-.03.026zm8.819-4.28l.17 6.953 6.109-14.417zm-13.494 1.186l3.903 1.974 4.314-3.636zm17.262-9.287l-14.526 7.347 7.645-1.547z"/><mask id="36k3c" width="2" height="2" x="-1" y="-1"><path fill="#fff" d="M544 148h26v24h-26z"/><use xlink:href="#36k3a"/></mask><filter id="36k3b" width="46" height="45" x="534" y="138" filterUnits="userSpaceOnUse"><feOffset dy="1" in="SourceGraphic" result="FeOffset1174Out"/><feGaussianBlur in="FeOffset1174Out" result="FeGaussianBlur1175Out" stdDeviation="0 0"/></filter></defs><g><g transform="translate(-544 -148)"><g filter="url(#36k3b)"><use fill="none" stroke-width="0" mask="url(&quot;#36k3c&quot;)" xlink:href="#36k3a"/><use fill="#fff" xlink:href="#36k3a"/></g><use fill="#fff" xlink:href="#36k3a"/><use fill="#7d7d7d" xlink:href="#36k3a"/></g></g></svg>
+                        <p class="header__nav-subtitle" >Services</p>
+                    </a>
+                    <a class="header__nav-link" href="#">
+                        <svg class="header__nav-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="27" viewBox="0 0 21 27"><defs><path id="jy10a" d="M723.617 173h-18.16a.678.678 0 0 1-.672-.684v-24.632c0-.378.3-.684.672-.684h12.109a.666.666 0 0 1 .47.197l.001.001v.001h.001l.001.001 6.053 6.158.001.001h.001v.002h.001l.001.001a.688.688 0 0 1 .193.478v18.476a.678.678 0 0 1-.672.684zm-17.487-1.368h16.814v-17.106h-5.38a.678.678 0 0 1-.673-.684v-5.473H706.13zm12.106-18.474h3.757l-3.757-3.822zm2.354 14.71h-12.106a.678.678 0 0 1-.673-.684c0-.378.301-.684.673-.684h12.106c.372 0 .673.306.673.684a.678.678 0 0 1-.673.684zm0-3.078h-12.106a.679.679 0 0 1-.673-.685c0-.378.301-.684.673-.684h12.106c.372 0 .673.306.673.684a.679.679 0 0 1-.673.685zm-6.053-3.08h-6.053a.678.678 0 0 1-.673-.684c0-.377.301-.684.673-.684h6.053c.371 0 .673.307.673.684a.678.678 0 0 1-.673.685zm-.473-7.184h-5.58a.678.678 0 0 1-.673-.684v-3.079c0-.378.301-.684.673-.684h5.58c.371 0 .673.306.673.684v3.08a.678.678 0 0 1-.673.683zm-4.908-1.368h4.236v-1.71h-4.236z"/><mask id="jy10c" width="2" height="2" x="-1" y="-1"><path fill="#fff" d="M704 147h21v26h-21z"/><use xlink:href="#jy10a"/></mask><filter id="jy10b" width="41" height="47" x="694" y="137" filterUnits="userSpaceOnUse"><feOffset dy="1" in="SourceGraphic" result="FeOffset1195Out"/><feGaussianBlur in="FeOffset1195Out" result="FeGaussianBlur1196Out" stdDeviation="0 0"/></filter></defs><g><g transform="translate(-704 -147)"><g filter="url(#jy10b)"><use fill="none" stroke-width="0" mask="url(&quot;#jy10c&quot;)" xlink:href="#jy10a"/><use fill="#fff" xlink:href="#jy10a"/></g><use fill="#fff" xlink:href="#jy10a"/><use fill="#7d7d7d" xlink:href="#jy10a"/></g></g></svg>
+                        <p class="header__nav-subtitle">About</p>
+                    </a>
+                    <a class="header__nav-link" href="#">
+                        <svg class="header__nav-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="27" viewBox="0 0 17 27"><defs><path id="5eawa" d="M878.756 172.316a.671.671 0 0 1-.594-.362l-6.945-13.234a8.395 8.395 0 0 1-.7-3.368c0-4.606 3.696-8.354 8.24-8.354 4.542 0 8.238 3.748 8.238 8.354a8.394 8.394 0 0 1-.73 3.441l-6.915 13.162a.672.672 0 0 1-.594.36zm-6.339-14.212l6.34 12.079 6.309-12.01c.388-.89.584-1.839.584-2.821 0-3.854-3.092-6.99-6.894-6.99-3.801 0-6.894 3.136-6.894 6.99 0 .956.187 1.882.555 2.752zm6.34 1.308c-2.374 0-4.305-1.958-4.305-4.365s1.93-4.365 4.304-4.365c2.374 0 4.305 1.958 4.305 4.365s-1.931 4.365-4.305 4.365zm0-7.366c-1.632 0-2.96 1.346-2.96 3 0 1.655 1.328 3.002 2.96 3.002 1.631 0 2.959-1.347 2.959-3.001 0-1.655-1.328-3.001-2.96-3.001z"/><mask id="5eawc" width="2" height="2" x="-1" y="-1"><path fill="#fff" d="M870 147h17v26h-17z"/><use xlink:href="#5eawa"/></mask><filter id="5eawb" width="37" height="47" x="860" y="137" filterUnits="userSpaceOnUse"><feOffset dy="1" in="SourceGraphic" result="FeOffset1216Out"/><feGaussianBlur in="FeOffset1216Out" result="FeGaussianBlur1217Out" stdDeviation="0 0"/></filter></defs><g><g transform="translate(-870 -147)"><g filter="url(#5eawb)"><use fill="none" stroke-width="0" mask="url(&quot;#5eawc&quot;)" xlink:href="#5eawa"/><use fill="#fff" xlink:href="#5eawa"/></g><use fill="#fff" xlink:href="#5eawa"/><use fill="#7d7d7d" xlink:href="#5eawa"/></g></g></svg>
+                        <p class="header__nav-subtitle">The Tour</p>
+                    </a>
+                    <a class="header__nav-link" href="#">
+                        <svg class="header__nav-icon" class="header__nav-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="27" viewBox="0 0 26 27"><defs><path id="7voxa" d="M389.785 173c-7.046 0-12.779-5.832-12.779-13s5.733-13 12.78-13c7.046 0 12.778 5.832 12.778 13s-5.732 13-12.779 13zm5.372-5.985c-.873 2.009-2.025 3.425-3.011 4.367a11.346 11.346 0 0 0 5.348-2.799 15.828 15.828 0 0 0-2.337-1.568zm-13.11 1.54a11.349 11.349 0 0 0 5.378 2.827c-1.009-.963-2.19-2.423-3.07-4.504-.763.437-1.534.99-2.309 1.677zm8.41-3.048v5.546c.967-.754 2.444-2.21 3.485-4.63a11.694 11.694 0 0 0-3.484-.916zm-4.892.767c1.044 2.51 2.562 4.01 3.548 4.78v-5.586a9.968 9.968 0 0 0-3.548.806zm10.066-.499c1.194.63 2.151 1.32 2.794 1.835a11.691 11.691 0 0 0 2.775-6.926h-4.7c-.062 1.969-.39 3.656-.869 5.091zm-17.26-5.09a11.69 11.69 0 0 0 2.74 6.885 15.108 15.108 0 0 1 2.765-1.987c-.444-1.393-.747-3.017-.806-4.899zm12.087 3.482c1.441.134 2.774.527 3.945 1.024.41-1.275.692-2.768.751-4.507h-4.696zm-6.042-3.483c.056 1.647.312 3.075.688 4.305a11.096 11.096 0 0 1 4.009-.867v-3.438zm12.084-1.368h4.7a11.69 11.69 0 0 0-2.74-6.885 15.094 15.094 0 0 1-2.766 1.986c.444 1.393.747 3.017.806 4.899zm-6.042 0h4.696c-.056-1.647-.312-3.075-.687-4.304a11.096 11.096 0 0 1-4.01.866zm-6.042 0h4.697v-3.483c-1.442-.134-2.775-.527-3.946-1.024-.41 1.275-.692 2.768-.751 4.507zm-6.045 0h4.699c.062-1.969.39-3.656.869-5.091a17.799 17.799 0 0 1-2.794-1.836 11.691 11.691 0 0 0-2.774 6.927zm12.087-10.369v5.585a9.968 9.968 0 0 0 3.547-.806c-1.044-2.51-2.562-4.01-3.547-4.779zm-4.83 4.63a11.7 11.7 0 0 0 3.485.916v-5.546c-.966.754-2.443 2.21-3.485 4.63zm6.518-4.96c1.008.964 2.19 2.424 3.07 4.505.762-.437 1.533-.99 2.308-1.677a11.352 11.352 0 0 0-5.379-2.827zm-10.07 2.8a15.79 15.79 0 0 0 2.337 1.568c.873-2.009 2.026-3.425 3.012-4.367a11.35 11.35 0 0 0-5.348 2.799z"/><mask id="7voxc" width="2" height="2" x="-1" y="-1"><path fill="#fff" d="M377 147h26v26h-26z"/><use xlink:href="#7voxa"/></mask><filter id="7voxb" width="46" height="47" x="367" y="137" filterUnits="userSpaceOnUse"><feOffset dy="1" in="SourceGraphic" result="FeOffset1153Out"/><feGaussianBlur in="FeOffset1153Out" result="FeGaussianBlur1154Out" stdDeviation="0 0"/></filter></defs><g><g transform="translate(-377 -147)"><g filter="url(#7voxb)"><use fill="none" stroke-width="0" mask="url(&quot;#7voxc&quot;)" xlink:href="#7voxa"/><use fill="#fff" xlink:href="#7voxa"/></g><use fill="#fff" xlink:href="#7voxa"/><use fill="#7d7d7d" xlink:href="#7voxa"/></g></g></svg>
+                        <p class="header__nav-subtitle" >How to</p>
+                    </a>
+                    <a class="header__nav-link" href="#">
+                            <svg class="header__nav-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="27" viewBox="0 0 21 27"><defs><path id="jy10a" d="M723.617 173h-18.16a.678.678 0 0 1-.672-.684v-24.632c0-.378.3-.684.672-.684h12.109a.666.666 0 0 1 .47.197l.001.001v.001h.001l.001.001 6.053 6.158.001.001h.001v.002h.001l.001.001a.688.688 0 0 1 .193.478v18.476a.678.678 0 0 1-.672.684zm-17.487-1.368h16.814v-17.106h-5.38a.678.678 0 0 1-.673-.684v-5.473H706.13zm12.106-18.474h3.757l-3.757-3.822zm2.354 14.71h-12.106a.678.678 0 0 1-.673-.684c0-.378.301-.684.673-.684h12.106c.372 0 .673.306.673.684a.678.678 0 0 1-.673.684zm0-3.078h-12.106a.679.679 0 0 1-.673-.685c0-.378.301-.684.673-.684h12.106c.372 0 .673.306.673.684a.679.679 0 0 1-.673.685zm-6.053-3.08h-6.053a.678.678 0 0 1-.673-.684c0-.377.301-.684.673-.684h6.053c.371 0 .673.307.673.684a.678.678 0 0 1-.673.685zm-.473-7.184h-5.58a.678.678 0 0 1-.673-.684v-3.079c0-.378.301-.684.673-.684h5.58c.371 0 .673.306.673.684v3.08a.678.678 0 0 1-.673.683zm-4.908-1.368h4.236v-1.71h-4.236z"/><mask id="jy10c" width="2" height="2" x="-1" y="-1"><path fill="#fff" d="M704 147h21v26h-21z"/><use xlink:href="#jy10a"/></mask><filter id="jy10b" width="41" height="47" x="694" y="137" filterUnits="userSpaceOnUse"><feOffset dy="1" in="SourceGraphic" result="FeOffset1195Out"/><feGaussianBlur in="FeOffset1195Out" result="FeGaussianBlur1196Out" stdDeviation="0 0"/></filter></defs><g><g transform="translate(-704 -147)"><g filter="url(#jy10b)"><use fill="none" stroke-width="0" mask="url(&quot;#jy10c&quot;)" xlink:href="#jy10a"/><use fill="#fff" xlink:href="#jy10a"/></g><use fill="#fff" xlink:href="#jy10a"/><use fill="#7d7d7d" xlink:href="#jy10a"/></g></g></svg>
+                            <p class="header__nav-subtitle">Contact</p>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">Travler gets you to where you want to be.</h1>
+                <p class="intro__subtitle">Around the world. Around the clock.</p>
+            </div> 
+        </div>
+    </section>
+    <section class="help">
+        <div class="container">
+            <div class="help__inner">
+                <h2 class="help__title">Anywhere, anytime, where here to help.</h2>
+                <p class="help__subtitle">And we mean that.</p>
+                <div class="help__map">
+                        <img class="help__map-img" src="./images/map-full.png" alt="map">
+                </div>
+                <div class="info">
+                    <div class="info__box">
+                       <div class="info__img">
+                           <svg class="info__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 76 76" ><defs><path id="a" d="M462 1193c-20.953 0-38-17.047-38-38s17.047-38 38-38 38 17.047 38 38-17.047 38-38 38zm0-72c-18.748 0-34 15.252-34 34 0 18.748 15.252 34 34 34 18.748 0 34-15.252 34-34 0-18.748-15.252-34-34-34zm0 63c-15.99 0-29-13.01-29-29s13.01-29 29-29 29 13.01 29 29-13.01 29-29 29zm0-54c-13.785 0-25 11.215-25 25s11.215 25 25 25 25-11.215 25-25-11.215-25-25-25zm9 27h-9a2 2 0 0 1-2-2v-9a2 2 0 0 1 4 0v7h7a2 2 0 0 1 0 4z"/></defs><use xlink:href="#a" transform="translate(-424 -1117)"/></svg>
+                           <div class="info__el"></div>
+                        </div>
+                        <h2 class="info__title">Save Time</h2>
+                        <p class="info__subtitle">Lets throw a trackie dacks also it'll be gutta. You little ripper avos flamin lets throw a lizard drinking. Gutful of jug where as busy as a big smoke. Grab us a billy as cunning as a bull bar. As cunning as a bonzer flamin as stands out like cubby house. As cross as a mate no dramas as cunning as a bonzer. Gutful of kindie flamin as cross as a grundies. Lets throw a </p>
+                    </div>
+                    <div class="info__box">
+                        <div class="info__img">
+                        <svg class="info__icon " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 84 51"><defs><path id="j9o3a" d="M739.19 1179.982c-.394 0-.78-.117-1.107-.337-7.159-4.805-9.09-14.593-4.307-21.818 2.316-3.499 5.844-5.883 9.933-6.712a15.6 15.6 0 0 1 4.29-.269 2.025 2.025 0 0 1-.02-.808c1.149-6.469 4.731-12.1 10.086-15.858 5.355-3.757 11.842-5.189 18.269-4.033 8.701 1.567 15.642 7.65 18.596 15.59a1.99 1.99 0 0 1 .896-.172c6.074.25 11.565 3.261 15.06 8.262 2.97 4.247 4.112 9.173 3.215 13.868-.883 4.63-3.706 8.835-7.948 11.841a1.989 1.989 0 0 1-1.146.366l-65.815.08zm7.625-25.162c-.77 0-1.546.077-2.318.233a11.586 11.586 0 0 0-7.401 5.002c-3.455 5.218-2.21 12.227 2.723 15.91l64.535-.08c3.114-2.368 5.176-5.525 5.83-8.949.7-3.667-.186-7.4-2.56-10.796-2.708-3.874-6.922-6.244-11.607-6.542.29 1.493.448 3.031.456 4.6a2.001 2.001 0 0 1-1.983 2.02h-.011a2.002 2.002 0 0 1-1.995-1.997c-.057-9.91-7.145-18.372-16.852-20.12-5.378-.966-10.804.231-15.286 3.375-4.481 3.143-7.478 7.856-8.44 13.27a2.014 2.014 0 0 1-.336.808c1.351.44 2.65 1.071 3.863 1.886a2.017 2.017 0 0 1 .554 2.785 1.986 1.986 0 0 1-2.767.557 11.45 11.45 0 0 0-6.405-1.962zm38.3-2.673a2 2 0 0 1-1.99-1.907c-.245-4.868-4.407-8.63-9.209-8.381a2.012 2.012 0 0 1-2.092-1.905 2.003 2.003 0 0 1 1.891-2.107c7.07-.348 13.039 5.111 13.393 12.19a2.003 2.003 0 0 1-1.994 2.11z"/></defs><g><g transform="translate(-731 -1129)"><use xlink:href="#j9o3a"/></g></g></svg>
+                        <div class="info__el"></div>
+                        </div>
+                        <h2 class="info__title">Win over the team</h2>
+                        <p class="info__subtitle">As cunning as a bonzer flamin as stands out like cubby house. As cross as a mate no dramas as cunning as a bonzer. Gutful of kindie flamin as cross as a grundies. Lets throw a strides also as cross as a thingo. </p>
+                        <p class="info__subtitle">Built like a old fella no dramas grab us a ten clicks away.</p>    
+                    </div>
+                    <div class="info__box">
+                        <div class="info__img">
+                        <svg class="info__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 76 76"><defs><path id="t4ega" d="M1088 1193h-.025a2.004 2.004 0 0 1-.906-.228l-35.958-17.966a1.999 1.999 0 0 1-1.105-1.787v-35.928a1.99 1.99 0 0 1 .184-.879l.043-.086c.205-.393.524-.69.896-.87l17.96-8.974a.523.523 0 0 1 .037-.019l17.98-8.983a2.004 2.004 0 0 1 1.788 0l35.975 17.974a1.983 1.983 0 0 1 .94.958c.133.285.191.585.185.879v35.928c0 .756-.427 1.449-1.105 1.787l-35.958 17.966a2.003 2.003 0 0 1-.906.229H1088zm2-36.73v31.5l31.995-15.986v-31.5l-15.084 7.536a.52.52 0 0 1-.037.019zm-35.995 15.514L1086 1187.77v-31.5l-31.995-15.986zm2.471-34.733l31.524 15.75 13.526-6.758-31.523-15.75zm17.998-8.992l31.523 15.75 13.527-6.758-31.524-15.75zm4.527 46.958c-.305 0-.612-.07-.894-.21l-17.997-8.993a1.998 1.998 0 0 1-1.106-1.787v-8.992a1.998 1.998 0 0 1 2.894-1.788l17.998 8.992a1.999 1.999 0 0 1 1.105 1.788v8.992a1.999 1.999 0 0 1-2 1.998zm-15.997-12.225l13.998 6.994v-4.525l-13.998-6.993z"/></defs><g><g transform="translate(-1050 -1117)"><use xlink:href="#t4ega"/></g></g></svg>
+                        </div>
+                        <h2 class="info__title">Design Features</h2>
+                        <p class="info__subtitle">Built like a old fella no dramas grab us a ten clicks away. Lets get some digger when she'll be right metho. As cross as a no dramas as cunning as a barrack.</p>
+                        <p class="info__subtitle">A old fella no dramas grab us a ten clicks away. Lets get some digger when she'll be right metho. As cross as a no dramas as cunning as a barrack.</p>
+                    </div>        
+                   </div>
+            </div>
+        </div>
+    </section>
+    <section class="desktop">
+        <div class="desktop__item">
+           <div class="desktop__border"><img class="desktop__img" src="./images/desktop.png" alt="">
+            <div class="desktop__main">
+                <div class="desktop__top">
+                    <svg class="desktop__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 76 76"><defs><path id="a" d="M462 1193c-20.953 0-38-17.047-38-38s17.047-38 38-38 38 17.047 38 38-17.047 38-38 38zm0-72c-18.748 0-34 15.252-34 34 0 18.748 15.252 34 34 34 18.748 0 34-15.252 34-34 0-18.748-15.252-34-34-34zm0 63c-15.99 0-29-13.01-29-29s13.01-29 29-29 29 13.01 29 29-13.01 29-29 29zm0-54c-13.785 0-25 11.215-25 25s11.215 25 25 25 25-11.215 25-25-11.215-25-25-25zm9 27h-9a2 2 0 0 1-2-2v-9a2 2 0 0 1 4 0v7h7a2 2 0 0 1 0 4z"/></defs><use xlink:href="#a" transform="translate(-424 -1117)"/></svg>
+                    <div class="desktop__el"></div>
+                    <svg class="desktop__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 84 51"><defs><path id="j9o3a" d="M739.19 1179.982c-.394 0-.78-.117-1.107-.337-7.159-4.805-9.09-14.593-4.307-21.818 2.316-3.499 5.844-5.883 9.933-6.712a15.6 15.6 0 0 1 4.29-.269 2.025 2.025 0 0 1-.02-.808c1.149-6.469 4.731-12.1 10.086-15.858 5.355-3.757 11.842-5.189 18.269-4.033 8.701 1.567 15.642 7.65 18.596 15.59a1.99 1.99 0 0 1 .896-.172c6.074.25 11.565 3.261 15.06 8.262 2.97 4.247 4.112 9.173 3.215 13.868-.883 4.63-3.706 8.835-7.948 11.841a1.989 1.989 0 0 1-1.146.366l-65.815.08zm7.625-25.162c-.77 0-1.546.077-2.318.233a11.586 11.586 0 0 0-7.401 5.002c-3.455 5.218-2.21 12.227 2.723 15.91l64.535-.08c3.114-2.368 5.176-5.525 5.83-8.949.7-3.667-.186-7.4-2.56-10.796-2.708-3.874-6.922-6.244-11.607-6.542.29 1.493.448 3.031.456 4.6a2.001 2.001 0 0 1-1.983 2.02h-.011a2.002 2.002 0 0 1-1.995-1.997c-.057-9.91-7.145-18.372-16.852-20.12-5.378-.966-10.804.231-15.286 3.375-4.481 3.143-7.478 7.856-8.44 13.27a2.014 2.014 0 0 1-.336.808c1.351.44 2.65 1.071 3.863 1.886a2.017 2.017 0 0 1 .554 2.785 1.986 1.986 0 0 1-2.767.557 11.45 11.45 0 0 0-6.405-1.962zm38.3-2.673a2 2 0 0 1-1.99-1.907c-.245-4.868-4.407-8.63-9.209-8.381a2.012 2.012 0 0 1-2.092-1.905 2.003 2.003 0 0 1 1.891-2.107c7.07-.348 13.039 5.111 13.393 12.19a2.003 2.003 0 0 1-1.994 2.11z"/></defs><g><g transform="translate(-731 -1129)"><use xlink:href="#j9o3a"/></g></g></svg>
+                    <div class="desktop__el"></div>
+                    <svg class="desktop__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 76 76"><defs><path id="t4ega" d="M1088 1193h-.025a2.004 2.004 0 0 1-.906-.228l-35.958-17.966a1.999 1.999 0 0 1-1.105-1.787v-35.928a1.99 1.99 0 0 1 .184-.879l.043-.086c.205-.393.524-.69.896-.87l17.96-8.974a.523.523 0 0 1 .037-.019l17.98-8.983a2.004 2.004 0 0 1 1.788 0l35.975 17.974a1.983 1.983 0 0 1 .94.958c.133.285.191.585.185.879v35.928c0 .756-.427 1.449-1.105 1.787l-35.958 17.966a2.003 2.003 0 0 1-.906.229H1088zm2-36.73v31.5l31.995-15.986v-31.5l-15.084 7.536a.52.52 0 0 1-.037.019zm-35.995 15.514L1086 1187.77v-31.5l-31.995-15.986zm2.471-34.733l31.524 15.75 13.526-6.758-31.523-15.75zm17.998-8.992l31.523 15.75 13.527-6.758-31.524-15.75zm4.527 46.958c-.305 0-.612-.07-.894-.21l-17.997-8.993a1.998 1.998 0 0 1-1.106-1.787v-8.992a1.998 1.998 0 0 1 2.894-1.788l17.998 8.992a1.999 1.999 0 0 1 1.105 1.788v8.992a1.999 1.999 0 0 1-2 1.998zm-15.997-12.225l13.998 6.994v-4.525l-13.998-6.993z"/></defs><g><g transform="translate(-1050 -1117)"><use xlink:href="#t4ega"/></g></g></svg>
+                </div>
+                <div class="desktop__bottom">
+                    <h2 class="desktop__title">A simple begining lead to big ideas</h1>
+                    <p class="desktop__subtitle">We started small but grew quickly.</p>
+                </div>
+            </div>
+        </div> 
+            
+        </div>
+    </section>
+    <section class="team">
+        <div class="container">
+            <div class="team__inner">
+                <div class="team__top">
+                        <div class="team__el"></div>
+                        <h2 class="team__title">A humble Team we are</h2>
+                        <div class="team__el"></div>
+                </div>
+                <p class="team__subtitle">We’ll some of us anyways</p>
+                <div class="team__slider">
+                    <div class="team__person">
+                        <div class="team__photo team__photo--active">
+                            <img class="team__img" src="./images/josh.png" alt="">
+                           <a class="team__link" href="#"><svg class="team__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 26 18"><defs><path id="5hbpa" d="M747.996 2427.3c-.915.157-2.242-.006-2.946-.3 1.462-.122 2.451-.788 2.833-1.694-.527.326-2.163.68-3.065.343a11.009 11.009 0 0 0-.144-.6c-.687-2.538-3.044-4.584-5.512-4.337.2-.081.401-.156.605-.225.27-.098 1.865-.359 1.615-.923-.213-.498-2.161.374-2.528.489.485-.182 1.285-.497 1.37-1.056a3.855 3.855 0 0 0-2.032.967c.204-.22.358-.487.39-.776-1.979 1.271-3.135 3.83-4.07 6.316-.734-.716-1.386-1.28-1.97-1.593-1.638-.881-3.597-1.803-6.671-2.95-.095 1.022.502 2.382 2.223 3.285-.373-.05-1.054.063-1.599.193.222 1.172.947 2.137 2.912 2.603-.898.06-1.362.266-1.782.707.409.815 1.407 1.773 3.2 1.576-1.995.865-.813 2.466.811 2.227-2.77 2.876-7.137 2.663-9.645.26 6.548 8.965 20.782 5.301 22.902-3.335 1.591.013 2.524-.552 3.103-1.177z"/></defs><g><g transform="translate(-722 -2419)"><use class="team__icon" xlink:href="#5hbpa"/></g></g></svg></a>
+                        </div>
+                        <h2 class="team__name">Josh Jansen</h2>
+                        <p class="team__status">Digital Producer</p>
+                    </div>
+                    <div class="team__person">
+                            <div class="team__photo">
+                                    <img class="team__img" src="./images/blaz.png" alt="">
+                                   <a class="team__link" href="#"><svg class="team__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 26 18"><defs><path id="5hbpa" d="M747.996 2427.3c-.915.157-2.242-.006-2.946-.3 1.462-.122 2.451-.788 2.833-1.694-.527.326-2.163.68-3.065.343a11.009 11.009 0 0 0-.144-.6c-.687-2.538-3.044-4.584-5.512-4.337.2-.081.401-.156.605-.225.27-.098 1.865-.359 1.615-.923-.213-.498-2.161.374-2.528.489.485-.182 1.285-.497 1.37-1.056a3.855 3.855 0 0 0-2.032.967c.204-.22.358-.487.39-.776-1.979 1.271-3.135 3.83-4.07 6.316-.734-.716-1.386-1.28-1.97-1.593-1.638-.881-3.597-1.803-6.671-2.95-.095 1.022.502 2.382 2.223 3.285-.373-.05-1.054.063-1.599.193.222 1.172.947 2.137 2.912 2.603-.898.06-1.362.266-1.782.707.409.815 1.407 1.773 3.2 1.576-1.995.865-.813 2.466.811 2.227-2.77 2.876-7.137 2.663-9.645.26 6.548 8.965 20.782 5.301 22.902-3.335 1.591.013 2.524-.552 3.103-1.177z"/></defs><g><g transform="translate(-722 -2419)"><use xlink:href="#5hbpa"/></g></g></svg></a>
+                                </div>
+                                <h2 class="team__name">Blaz Robar</h2>
+                                <p class="team__status">Designer</p>
+                    </div>
+                    <div class="team__person">
+                            <div class="team__photo">
+                                    <img class="team__img" src="./images/james.png" alt="">
+                                <a class="team__link" href="#"><svg class="team__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 26 18"><defs><path id="5hbpa" d="M747.996 2427.3c-.915.157-2.242-.006-2.946-.3 1.462-.122 2.451-.788 2.833-1.694-.527.326-2.163.68-3.065.343a11.009 11.009 0 0 0-.144-.6c-.687-2.538-3.044-4.584-5.512-4.337.2-.081.401-.156.605-.225.27-.098 1.865-.359 1.615-.923-.213-.498-2.161.374-2.528.489.485-.182 1.285-.497 1.37-1.056a3.855 3.855 0 0 0-2.032.967c.204-.22.358-.487.39-.776-1.979 1.271-3.135 3.83-4.07 6.316-.734-.716-1.386-1.28-1.97-1.593-1.638-.881-3.597-1.803-6.671-2.95-.095 1.022.502 2.382 2.223 3.285-.373-.05-1.054.063-1.599.193.222 1.172.947 2.137 2.912 2.603-.898.06-1.362.266-1.782.707.409.815 1.407 1.773 3.2 1.576-1.995.865-.813 2.466.811 2.227-2.77 2.876-7.137 2.663-9.645.26 6.548 8.965 20.782 5.301 22.902-3.335 1.591.013 2.524-.552 3.103-1.177z"/></defs><g><g transform="translate(-722 -2419)"><use xlink:href="#5hbpa"/></g></g></svg></a>
+                                </div>
+                                <h2 class="team__name">James Brown</h2>
+                                <p class="team__status">Developer</p>
+                    </div>
+                    <div class="team__person">
+                            <div class="team__photo">
+                                    <img class="team__img" src="./images/skeletor.png" alt="">
+                                <a class="team__link" href="#"><svg class="team__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 26 18"><defs><path id="5hbpa" d="M747.996 2427.3c-.915.157-2.242-.006-2.946-.3 1.462-.122 2.451-.788 2.833-1.694-.527.326-2.163.68-3.065.343a11.009 11.009 0 0 0-.144-.6c-.687-2.538-3.044-4.584-5.512-4.337.2-.081.401-.156.605-.225.27-.098 1.865-.359 1.615-.923-.213-.498-2.161.374-2.528.489.485-.182 1.285-.497 1.37-1.056a3.855 3.855 0 0 0-2.032.967c.204-.22.358-.487.39-.776-1.979 1.271-3.135 3.83-4.07 6.316-.734-.716-1.386-1.28-1.97-1.593-1.638-.881-3.597-1.803-6.671-2.95-.095 1.022.502 2.382 2.223 3.285-.373-.05-1.054.063-1.599.193.222 1.172.947 2.137 2.912 2.603-.898.06-1.362.266-1.782.707.409.815 1.407 1.773 3.2 1.576-1.995.865-.813 2.466.811 2.227-2.77 2.876-7.137 2.663-9.645.26 6.548 8.965 20.782 5.301 22.902-3.335 1.591.013 2.524-.552 3.103-1.177z"/></defs><g><g transform="translate(-722 -2419)"><use xlink:href="#5hbpa"/></g></g></svg></a>  
+                                </div>
+                                <h2 class="team__name">Skeletor</h2>
+                                <p class="team__status">Administration</p>
+                    </div>
+                </div>
+                <div class="team__panel">
+                        <div class="team__dots team__dots--active"></div>
+                        <div class="team__dots"></div>
+                        <div class="team__dots"></div>
+                        <div class="team__dots"></div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__top">
+                <div class="about__post">
+                    <button class="about__btn">+</button>
+                    <h2 class="about__title">Winning Design Awards</h2>
+                    <p class="about__subtitle about__subtitle--active">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper mauris vitae sapien bibendum tincidunt. Check leo dignissim + </p>
+                    <p class="about__subtitle">Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis est, at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus faucibus rhoncus massa, non laoreet lorem fringilla</p>
+                </div>
+                <div class="about__post">
+                    <button class="about__btn">+</button>
+                    <h2 class="about__title">Badass Features</h2>
+                    <p class="about__subtitle about__subtitle--active">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper mauris vitae sapien bibendum tincidunt. Check leo dignissim + </p>
+                    <p class="about__subtitle">Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis est, at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus faucibus rhoncus massa, non laoreet lorem fringilla</p>
+                </div>
+            </div>
+                <div class="about__what">
+                    <h2 class="about__title">A full col text box sits nicely like this</h2>
+                    <p class="about__subtitle about__subtitle--active">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper mauris vitae sapien bibendum tincidunt. Check leo dignissim + </p>
+                    <p class="about__subtitle">Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis est, at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus faucibus rhoncus massa, non laoreet lorem fringilla</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__top">
+                    <a class="logo footer__logo" href="#">
+                        <svg class="logo__img footer__logo-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="51" viewBox="0 0 48 51"><defs><path id="t24wa" d="M350.06 87.941c.133.927-.242 1.87-.977 2.46a2.737 2.737 0 0 1-2.638.437l-10.435-3.75a23.933 23.933 0 0 1-7.924 1.338c-7.316 0-14.372-3.344-18.875-8.946-3.988-4.96-5.784-11.16-5.057-17.456.728-6.297 3.892-11.937 8.91-15.88A24.227 24.227 0 0 1 327.974 41c7.379 0 14.235 3.264 18.81 8.954 6.28 7.81 6.943 18.644 1.71 27.116zm-6.687-12.91c4.584-6.68 4.248-15.417-.836-21.74-3.54-4.403-8.846-6.929-14.56-6.929-4.234 0-8.224 1.376-11.537 3.98-3.884 3.052-6.333 7.417-6.897 12.29-.563 4.874.827 9.672 3.914 13.512 3.486 4.334 8.95 6.922 14.62 6.923a18.45 18.45 0 0 0 6.816-1.293 2.75 2.75 0 0 1 1.653-.115c.218.022.433.071.642.145l6.864 2.468-.98-6.813a2.67 2.67 0 0 1 .301-2.429zm-16.228-23.292a2.672 2.672 0 0 1-1.384 3.535c-3.403 1.488-6.014 4.344-7.164 7.835a2.704 2.704 0 0 1-2.578 1.851c-.287 0-.57-.045-.844-.133a2.683 2.683 0 0 1-1.574-1.333 2.636 2.636 0 0 1-.162-2.046c1.627-4.937 5.318-8.975 10.127-11.078.347-.153.717-.23 1.098-.23 1.073 0 2.047.627 2.48 1.599z"/><path  d="M304 41h48v50h-48z"/><use xlink:href="#t24wa"/><filter id="t24wb" width="68" height="71" x="294" y="31" filterUnits="userSpaceOnUse"><feOffset dy="1" in="SourceGraphic" result="FeOffset1023Out"/><feGaussianBlur in="FeOffset1023Out" result="FeGaussianBlur1024Out" stdDeviation="0 0"/></filter></defs><g><g transform="translate(-304 -41)"><g filter="url(#t24wb)"><use s mask="url(&quot;#t24wc&quot;)" xlink:href="#t24wa"/><use fill="#fff" xlink:href="#t24wa"/></g><use fill="#8038c2" xlink:href="#t24wa"/><use xlink:href="#t24wa"/></g></g></svg>
+                        <div class="logo__txt footer__logo-txt">
+                            <p class="logo__title footer__logo-title">travler</p>
+                            <p class="logo__subtitle footer__logo-subtitle">Get the advice you need about travel</p>
+                        </div>
+                    </a>
+                    <nav class="footer__nav">
+                        <a class="footer__nav-link" href="#">Portfolio</a>
+                        <a class="footer__nav-link" href="#">Services</a>
+                        <a class="footer__nav-link" href="#">Staff</a>
+                        <a class="footer__nav-link" href="#">Articles</a>
+                        <a class="footer__nav-link" href="#">Contact</a>
+                    </nav>
+                </div>
+                <div class="footer__center">
+                    <p class="footer__subtitle">Trent from punchy digger bloody gutful of mokkies. Get a dog up ya fair dinkum mate as cross as a flake. Stands out like a bluey flamin stands out like a pot. As stands out like christmas to grab us a ugg boots. She'll be right buckley's chance my as stands out like divvy van. It'll be smokes trent from punchy chewie.</p>
+                    <div class="footer__social">
+                            <a class="footer__social-link" href="#"><svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="18" viewBox="0 0 26 18"><defs><path id="5hbpa" d="M747.996 2427.3c-.915.157-2.242-.006-2.946-.3 1.462-.122 2.451-.788 2.833-1.694-.527.326-2.163.68-3.065.343a11.009 11.009 0 0 0-.144-.6c-.687-2.538-3.044-4.584-5.512-4.337.2-.081.401-.156.605-.225.27-.098 1.865-.359 1.615-.923-.213-.498-2.161.374-2.528.489.485-.182 1.285-.497 1.37-1.056a3.855 3.855 0 0 0-2.032.967c.204-.22.358-.487.39-.776-1.979 1.271-3.135 3.83-4.07 6.316-.734-.716-1.386-1.28-1.97-1.593-1.638-.881-3.597-1.803-6.671-2.95-.095 1.022.502 2.382 2.223 3.285-.373-.05-1.054.063-1.599.193.222 1.172.947 2.137 2.912 2.603-.898.06-1.362.266-1.782.707.409.815 1.407 1.773 3.2 1.576-1.995.865-.813 2.466.811 2.227-2.77 2.876-7.137 2.663-9.645.26 6.548 8.965 20.782 5.301 22.902-3.335 1.591.013 2.524-.552 3.103-1.177z"/></defs><g><g transform="translate(-722 -2419)"><use fill="#fff" xlink:href="#5hbpa"/></g></g></svg><span>Twitter</span></a>
+                            <a class="footer__social-link" href="#"><svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6" height="12" viewBox="0 0 6 12"><defs><path id="274oa" d="M933.988 3622.993h-2.663V3617h-1.33v-2.066h1.33v-1.24c0-1.685.751-2.688 2.886-2.688h1.777v2.067h-1.11c-.832 0-.886.288-.886.827l-.004 1.034h2.013l-.236 2.066h-1.777v5.994z"/></defs><g><g transform="translate(-930 -3611)"><use fill="#fff" xlink:href="#274oa"/></g></g></svg><span>Facebook</span></a>
+                            <a class="footer__social-link" href="#"><svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="9" viewBox="0 0 9 9"><defs><path id="laoaa" d="M1029.997 3616.06a5.946 5.946 0 0 1 5.937 5.941h-1.731a4.193 4.193 0 0 0-1.233-2.984 4.174 4.174 0 0 0-2.973-1.232zm.002-3.06c4.96 0 8.993 4.04 8.993 9.003h-1.73c0-4.012-3.259-7.277-7.263-7.277zm2.395 7.798c0 .66-.538 1.195-1.2 1.195-.662 0-1.199-.535-1.199-1.195s.537-1.195 1.2-1.195c.661 0 1.199.535 1.199 1.195z"/></defs><g><g transform="translate(-1030 -3613)"><use fill="#fff" xlink:href="#laoaa"/></g></g></svg><span>RSS</span></a>
+                            <a class="footer__social-link" href="#"><svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="9" viewBox="0 0 13 9"><defs><path id="gxzna" d="M1112.007 3621.952v-8.316l-3.974 3.286zm-6.496-3.61l6.463-5.345h-12.927zm-2.523-1.42l-3.98-3.29-.01 8.342zm.318.263l-3.809 4.823h12.027l-3.81-4.823-2.202 1.822v.002l-.001-.001-.002.001v-.002z"/></defs><g><g transform="translate(-1099 -3613)"><use fill="#fff" xlink:href="#gxzna"/></g></g></svg><span>Mail</span></a>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__more">
+                        <a class="footer__more-link" href="#">About us</a>
+                        <a class="footer__more-link" href="#">Footer Links here</a>
+                        <a class="footer__more-link" href="#">Privacy</a>
+                        <a class="footer__more-link" href="#">Icons by http://www.dribbble.com/joshuaandrewdavies</a>
+                    </div>
+                    <p class="footer__end">As cross as a hoon my built like a op shop. We're going bored sh*tless heaps she'll be right budgie smugglers. Grab us a durry mate she'll be right dunny rat. She'll be right larrikin with skite. As stands out like kero it'll be truckie.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body> 
+</html>

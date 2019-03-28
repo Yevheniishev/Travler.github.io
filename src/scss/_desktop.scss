@@ -1,0 +1,103 @@
+.desktop {
+    padding-top: 57px;
+    background-color: $color-desktop;
+    overflow-y: hidden;  
+    &__item {
+        display: flex; 
+        justify-content: center;  
+    }
+    &__border {
+     position: relative;
+     width: 81.9%;    
+    }
+    &__img {
+        width: 100%;   
+    }
+    &__main {
+        padding-top: 8%;
+        position: absolute;
+        top: 5.4%;
+        left: 4%; 
+        height: 70.3%;
+        width: 92%;  
+        background-image: linear-gradient(30deg, rgba(#33017a, 1) 0%, rgba(#8f1cc4, 1) 100%);   
+    }
+    &__top {
+        margin-bottom: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    &__icon {
+        fill: $color-main;
+        width: 85px;
+        height: 85px;
+        margin-right: 6.7%;
+        &:first-of-type {
+            margin-left: 4%; 
+        }
+        &:last-of-type {
+            margin-right: 4%;
+        }
+    }
+    &__el {
+        width: 140px;
+        height: 3px;  
+        background-color: $color-main;
+        margin-right: 6.7%; 
+    }
+    &__title {
+        @include txt(2vw, $color-main, 22px, $roboto-regular);
+        text-shadow: 0 1px 1px #000000;
+        letter-spacing: 0.9px;
+        margin-bottom: 20px; 
+    }
+    &__subtitle {
+        @include txt(14px, $color-primary, 22px, $roboto-regular);
+        text-shadow: 0 1px 1px #000000;
+    }
+}
+@media (max-width: $lg) {
+    .desktop {
+        &__main {
+            padding-top: 4%; 
+        }
+        &__top {
+            margin-bottom: 4%;  
+        }
+        &__title {
+            margin-bottom: 1.7%;
+        }
+        &__subtitle {
+            font-size: 12px; 
+        }
+    }
+}
+@media (max-width: $sm) {
+    .desktop {
+        &__main {
+            padding-top: 4%; 
+        }
+        &__top {
+            margin-bottom: 7%;  
+        }
+        &__title {
+            font-size: 12px;
+            margin-bottom: 1.7%;
+            line-height: 16px;
+        }
+        &__subtitle {
+            font-size: 10px;
+            line-height: 16px;
+        }
+        &__icon {
+            width: 65px;
+            height: 45px;
+        }
+    }
+}

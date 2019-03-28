@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+     
+}
+body {
+    font-size: 1.6rem; 
+    background-color: $color-body; 
+    overflow-x: hidden;
+}
+
+.container {              
+    margin: 0 auto;   
+    padding: 0 15px;      
+} 
+
+@media (min-width: $md) {
+    .container {
+        width: 100%;      
+    }
+}
+@media (min-width: $lg) {
+    .container {
+        width: 960px;       
+    }
+}  
+@media (min-width: $xxl) {
+    .container {  
+        width: 1200px;                 
+    }
+}    

@@ -1,0 +1,187 @@
+.footer {
+    background-color: $color-footer;
+    border-top: 4px solid $color-footer-border; 
+    &__inner {
+        padding-top: 34px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; 
+        
+    }
+    &__top {
+        width: 100%; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 36px;        
+    }
+    &__center {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 48px;
+    }
+    &__bottom {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+    &__more { 
+        margin-bottom: 23px;
+        &-link {
+            @include txt(12px, $color-main, 23px, $roboto-regular);
+            margin-right: 15px;
+        }
+    }
+    &__subtitle {
+        max-width: 451px;
+        @include txt(12px, $color-main, 23px, $roboto-regular);
+    }
+    &__social {
+        display: flex;
+        align-items: center; 
+        justify-content: flex-start;
+        margin-right: 97px;  
+        &-link {
+            @include txt(12px, $color-main, 23px, $roboto-regular); 
+            margin-left: 36px;
+        }
+        &-icon {
+            fill: $color-main;
+            width: 13px;
+            height: 9px;
+            margin-right: 6px;
+        } 
+    }
+    &__nav {
+        display: flex;
+        &-link {
+            @include txt(12px, $color-main, 16px, $roboto-regular); 
+            font-weight: 700;
+            position: relative;
+            margin: 0 25px;
+            &::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: -28px;
+                width: 1px;
+                height: 100%;
+                background-color: $color-link-border;
+            }
+            &:first-child::before {
+                display: none;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: -15px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                height: 4px;
+                background-color: transparent;
+            }
+            &:hover::after {
+                background-color: $color-footer-border; 
+            }
+        }
+    }
+    &__logo {
+        &-img {
+            fill: $color-main;
+        }
+        &-title {
+            color: $color-main;
+        }
+    }
+    &__end {
+        @include txt(11px, $color-end, 21px, $roboto-regular);
+        max-width: 750px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: $lg) {
+    .footer {   
+        &__social {
+            flex-direction: column;
+            align-items: flex-start;
+        } 
+    }
+}
+@media (max-width: $md) {
+    .footer {
+        &__top {
+            flex-direction: column;
+        }
+        &__logo {
+            margin-bottom: 30px;
+        }
+        &__social {
+            margin-right: 0; 
+        }
+        &__subtitle {
+            max-width: 400px;
+        }
+        &__more {
+            display: flex;
+            flex-wrap: wrap; 
+        }
+    }
+}
+@media (max-width: $sm) {
+    .footer {
+        &__nav {
+            width: 100%;
+             justify-content: space-around;
+             flex-wrap: wrap;
+            &-link {
+                margin: 0 0 15px 20px;  
+                font-size: 16px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &::after {
+                bottom: -7px; 
+                }
+                &::before {
+                    display: none;
+                }
+            }
+        }
+        &__more {
+            &-link {
+                font-size: 10px;
+            }
+        }
+        &__end {
+            font-size: 10px;
+        }
+        &__center {
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        &__subtitle {
+            display: none;
+        }
+        &__social {
+            &-link {
+                margin-left: 0;
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+            &-icon {
+                width: 18px;
+                height: 14px; 
+                margin-right: 12px; 
+            }
+        }
+    }
+}

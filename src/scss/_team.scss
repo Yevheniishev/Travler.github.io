@@ -1,0 +1,167 @@
+.team {
+    padding-top: 81px;  
+    background-color: #ebebeb;
+    margin-top: -33%; 
+    position: relative;
+    z-index: 10;
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__top {
+        width: 100%;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 17px;
+    }
+    &__el {
+        width: 18.9%;
+        height: 2px;
+        box-shadow: 0 1px 0 #ffffff;
+        background-color: $color-chrom;
+    }
+    &__title {
+        @include txt(2.5vw, $color-granit, 22px, $roboto-regular);
+        text-shadow: 0 1px 0 #ffffff;
+        letter-spacing: 0.9px;
+        margin: 0 45px;
+    }
+    &__subtitle {
+        @include txt(14px, $color-granit, 22px, $roboto-regular);
+        text-shadow: 0 1px 0 #ffffff; 
+        font-weight: 700;
+        margin-bottom: 46px;
+    }
+    &__slider {
+        display: flex;
+        justify-content: center; 
+        width: 100%; 
+    }
+    &__person {
+        margin-right: 20px;
+        max-width: 220px;
+        display: flex;
+        flex-direction: column; 
+        margin-bottom: 35px; 
+    }
+    &__person:last-child {
+        margin-right: 0;
+    }
+    &__photo {  
+        position: relative; 
+        display: flex;
+        border: 5px solid $color-main;
+        box-shadow: 0 0 5px rgba(76, 76, 76, 0.13);
+        background-color: $color-main; 
+        margin-bottom: 24px;  
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 99%;  
+            height: 100%; 
+            transform: rotate(-3deg) translate(-4px, -6px);
+            border: 5px solid $color-main; 
+            background-color: $color-main;
+            box-shadow: 0 0 5px rgba(76, 76, 76, 0.13);
+            z-index: -1;    
+        }
+        &--active {
+            box-shadow: 0 0 30px -2px rgba(0, 0, 0, 0.55); 
+        }
+        &:hover {
+            box-shadow: 0 0 30px -2px rgba(0, 0, 0, 0.55); 
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 210px;
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute; 
+        bottom: 0;
+        right: 0;
+        width: 47px;
+        height: 41px; 
+        border:none;
+        background-color: $color-follow;  
+    }
+    &__icon {
+        width: 26px;
+        height: 18px;
+        fill: $color-main;
+        vertical-align: middle;
+    }
+    &__name {
+        @include txt(18px, $color-person, 22px, $roboto-regular);
+        text-shadow: 0 1px 0 #ffffff;
+        margin-bottom: 5px; 
+    }
+    &__status {
+        @include txt(14px, $color-person, 22px, $roboto-regular); 
+    }
+    &__panel {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; 
+        margin-block-end: 46px;
+    }
+    &__dots {
+        width: 10px;
+        height: 10px;
+        background-color: $color-dots;
+        border-radius: 50%;
+        margin-right: 7px;
+        cursor: pointer;
+    }
+    &__dots--active {
+            background-color: $color-follow;
+    }
+}
+@media (max-width: $xxl) {
+    .team {
+        margin-top: -30%; 
+    }
+}
+@media (max-width: $lg) {
+    .team {
+        margin-top: -27%;
+        &__slider {
+            flex-wrap: wrap; 
+        }
+    }
+    
+}
+@media (max-width: $md) {
+    .team {
+        &__title {
+            font-size: 22px;
+        }
+        &__panel {
+            display: none;
+        }
+    }
+}
+@media (max-width: $sm) {
+    .team {
+        padding-top: 40px;
+        margin-top: -20%;
+        &__el {
+            display: none;
+        }
+        &__title {
+            font-size: 20px;
+            margin: 0; 
+        }
+        &__slider {
+            flex-direction: column;
+            align-items: center; 
+        }
+    }
+}
