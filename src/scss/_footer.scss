@@ -138,13 +138,15 @@
 }
 @media (max-width: $sm) {
     .footer {
+        &__top {
+            margin-bottom: 25px; 
+        }
         &__nav {
             width: 100%;
              justify-content: space-around;
              flex-wrap: wrap;
             &-link {
-                margin: 0 0 15px 20px;  
-                font-size: 16px;
+                margin: 0 0 15px 15px;  
                 &:first-child {
                     margin-left: 0;
                 }
