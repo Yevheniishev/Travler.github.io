@@ -1,5 +1,6 @@
 .intro {
-    padding-top: 14.8%;  
+    padding-top: 14.8%; 
+    padding-bottom: 16.2%;   
     background-image: url('../images/intro.png'); 
     background-repeat: no-repeat; 
     background-size: 100% 100%;
@@ -22,12 +23,11 @@
         flex-direction: column;
         align-items: center; 
         justify-content: flex-start;
-        padding-bottom: 16.2%; 
         text-align: center;
     }
     &__title { 
         @include txt(2.65vw, $color-main, 2.7vw, $roboto-bold);  
-        font-weight: 700;
+        letter-spacing: 1.5px;
         margin-bottom: 0.9%;
     }
     &__subtitle {
@@ -35,10 +35,10 @@
     }  
 }
 @media (min-width: $xxl) {
-    .intro {
+    .intro {    
         &__title {
             max-width: 499px;
-        }
+        } 
     }
 }
 @media (max-width: $md) {

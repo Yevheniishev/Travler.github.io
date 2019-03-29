@@ -19,11 +19,11 @@
       margin-bottom: 27px;
     }
     &__map {
-        position: relative;
-        width: 100%; 
+        position: relative;  
         overflow: hidden; 
         &-img {
             width: 100%;
+            max-width: 985px; 
         }
     }
 } 

@@ -9,7 +9,7 @@ $(document).ready(function (){
 
     $('.header__btn').click(function() {
         $('.header__input').toggleClass('header__input--active');
-        $('.header__btn-search').toggleClass('header__btn-search--active');ы
+        $('.header__btn-search').toggleClass('header__btn-search--active');
     })
     $('.header__burger').click(function() {
         $(this).toggleClass('header__burger--active');
