@@ -147,7 +147,7 @@
         background-color: #ffffff;
         color: $color-input; 
         outline: none;
-        padding: 19px 40px 19px 14px;
+        padding: 19px 40px 15px 14px;
     }
     &__input::placeholder {
         color: $color-disabled;
@@ -186,7 +186,7 @@
         text-shadow: 0 1px 0 #ffffff;
     }
     &__subtitle {
-        @include txt (12px, $color-silver, 18px, $roboto-lightItalic);  
+        @include txt (12px, $color-silver, 12px, $roboto-lightItalic);  
         font-weight: 700;
         text-shadow: 0 1px 0 #ffffff; 
     }
@@ -278,7 +278,7 @@
         &__nav {
             transform: translateX(200px);      
             position: absolute;    
-            top: 116px;  
+            top: 110px;  
             right: 0;  
             width: 150px;   
             flex-direction: column;
