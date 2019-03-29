@@ -27,7 +27,6 @@
     }
     &__title { 
         @include txt(2.65vw, $color-main, 2.7vw, $roboto-bold);  
-        letter-spacing: 1.5px;
         margin-bottom: 0.9%;
     }
     &__subtitle {
