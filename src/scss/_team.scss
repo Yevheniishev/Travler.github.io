@@ -4,6 +4,7 @@
     margin-top: -33%; 
     position: relative;
     z-index: 10;
+    overflow: hidden;
     &__inner {
         display: flex;
         flex-direction: column;
@@ -110,7 +111,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center; 
-        margin-block-end: 46px;
+        margin-bottom: 46px;
     }
     &__dots {
         width: 10px;

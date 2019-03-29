@@ -1,21 +1,10 @@
 .intro {
     padding-top: 14.8%;  
-    background-image: url('../images/intro.png');
+    background-image: url('../images/intro.png'); 
     background-repeat: no-repeat; 
     background-size: 100% 100%;
     position: relative;
-    z-index: 0;
-    &::before {
-        content: '';   
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: $color-intro;
-        z-index: -1; 
-        mix-blend-mode: multiply;
-    }
+    z-index: 0;  
     &::after {
         content: '';
         position: absolute;
@@ -39,11 +28,41 @@
     &__title { 
         @include txt(2.65vw, $color-main, 2.7vw, $roboto-bold);  
         font-weight: 700;
-        max-width: 499px;
         margin-bottom: 0.9%;
     }
     &__subtitle {
         @include txt(1.35vw, $color-main, 1.3vw, $roboto-regular);          
     }  
+}
+@media (min-width: $xxl) {
+    .intro {
+        &__title {
+            max-width: 499px;
+        }
+    }
+}
+@media (max-width: $md) {
+    .intro {
+        &__title {
+            font-size: 3vw;
+            margin-bottom: 1.5%;
+        }
+        &__subtitle {
+            font-size: 2vw;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .intro { 
+        &__title {
+            font-size: 4vw;   
+            line-height: 20px; 
+            margin-bottom: 2%;
+        }
+        &__subtitle {
+            font-size: 11px;     
+    }
+}
 }
 

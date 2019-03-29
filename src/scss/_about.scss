@@ -7,6 +7,7 @@
          align-items: center;
     }
     &__top {
+        width: 100%;
         display: flex;
         justify-content: center;
         
@@ -44,6 +45,7 @@
     &__subtitle {
         @include txt(12px, $color-subtitle-about, 22px, $roboto-regular);
         margin-bottom: 31px;
+        width: 100%;     
         &--active {
             @include txt(14px, $color-travler, 25px, $roboto-regular); 
             font-weight: 700;

@@ -1,6 +1,7 @@
 .footer {
     background-color: $color-footer;
     border-top: 4px solid $color-footer-border; 
+    overflow: hidden;
     &__inner {
         padding-top: 34px;
         display: flex;
@@ -131,8 +132,12 @@
             max-width: 400px;
         }
         &__more {
+            width: 100%;
             display: flex;
             flex-wrap: wrap; 
+        }
+        &__end {
+            width: 100%;
         }
     }
 }
