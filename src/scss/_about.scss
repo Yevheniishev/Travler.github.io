@@ -2,7 +2,7 @@
     margin-bottom: 34px;
     position: relative;
     z-index: 5; 
-    background-color: $color-body; 
+    background-color: $color-body;
     &__inner {
          display: flex;
          flex-direction: column;
@@ -12,7 +12,7 @@
     &__top {
         width: 100%;
         display: flex;
-        justify-content: center; 
+        justify-content: center;
         
     }
     &__post {
