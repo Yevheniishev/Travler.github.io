@@ -184,6 +184,7 @@
     &__title {
         @include txt(39px, $color-travler, 32px, $roboto-black);
         text-shadow: 0 1px 0 #ffffff;
+        margin-bottom: 3px; 
     }
     &__subtitle {
         @include txt (12px, $color-silver, 12px, $roboto-lightItalic);  
