@@ -176,8 +176,7 @@
 .logo {
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-decoration: none;
+    align-items: center; 
     &__txt {
         margin-left: 10px; 
     }
@@ -188,7 +187,7 @@
     }
     &__subtitle {
         @include txt (12px, $color-silver, 12px, $roboto-lightItalic);  
-        font-weight: 700;
+        font-weight: 700; 
         text-shadow: 0 1px 0 #ffffff; 
     }
 }
@@ -336,7 +335,7 @@
             margin-bottom: 0;
         }
         &__subtitle {
-            font-size: 8px;
+            display: none; 
         }
     }
 }
